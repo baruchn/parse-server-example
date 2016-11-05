@@ -12,11 +12,11 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  databaseURI: databaseUri || 'mongodb://baruhn@gmail.com:bn310885@ds033337.mongolab.com:33337/hareut-karmiel',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'myAppId',
-  masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
+  appId: process.env.APP_ID || '1cch8PcCjyXkutM64AEU7bB72ssn3tFV4dyg8tLM',
+  masterKey: process.env.MASTER_KEY || 'n7g23k4gAqTg7pTULIjDVl0ctoWazXuKpyjf9Ari', //Add your master key here. Keep it secret!
+  serverURL: process.env.SERVER_URL || 'https://hareut-test.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
